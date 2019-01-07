@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:jessie
 
 RUN apt-get update &&\
     apt-get install -y sudo time git-core subversion build-essential g++ bash make libssl-dev patch && \
