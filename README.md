@@ -37,5 +37,6 @@ After the build, the images will be inside `~/mybuild/bin/target/`.
 ## Other Projects
 
 Other, but very similar projects:
-* [docker-openwrt](https://github.com/EasyPi/docker-openwrt)
+* [docker-openwrt-buildroot](https://github.com/noonien/docker-openwrt-buildroot)
 * [openwrt-docker-toolchain](https://github.com/mchsk/openwrt-docker-toolchain)
+* [docker-openwrt](https://github.com/EasyPi/docker-openwrt)
