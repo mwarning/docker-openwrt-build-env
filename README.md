@@ -4,7 +4,7 @@ Build OpenWrt images in a Docker container when building OpenWrt on the host sys
 
 ## Prerequisites
 
-* install Docker
+* Docker installed
 * running Docker daemon
 * build Docker image:
 
@@ -14,9 +14,11 @@ cd docker-openwrt-builder
 docker build -t openwrt_builder .
 ```
 
-## Use
+Now the docker image is available.
 
-Create build folder and link it into a new docker container:
+## Usage
+
+Create a build folder and link it into a new docker container:
 ```
 mkdir ~/mybuild
 docker run -v ~/mybuild:/home/user/build -it openwrt_builder /bin/bash
