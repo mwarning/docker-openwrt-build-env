@@ -1,6 +1,7 @@
 # Docker OpenWrt Builder
 
 Build OpenWrt images in a Docker container when building OpenWrt on the host systems fails.
+Tested with LEDE-17.01 and OpenWrt-18.06.
 
 ## Prerequisites
 
