@@ -35,7 +35,7 @@ make menuconfig
 make -j4
 ```
 
-After the build, the images will be inside `~/mybuild/bin/target/`.
+After the build, the images will be inside `~/mybuild/openwrt/bin/target/`.
 
 ## Other Projects
 
