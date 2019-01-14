@@ -15,7 +15,7 @@ cd docker-openwrt-builder
 docker build -t openwrt_builder .
 ```
 
-Now the docker image is available.
+Now the docker image is available. These steps only need to be done once.
 
 ## Usage
 
