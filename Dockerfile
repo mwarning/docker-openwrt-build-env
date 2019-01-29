@@ -10,3 +10,6 @@ RUN apt-get update &&\
 
 USER user
 WORKDIR /home/user/build
+
+# set dummy git config
+RUN git config --global user.name "user" && git config --global user.email "user@example.com"
