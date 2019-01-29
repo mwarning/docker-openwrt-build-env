@@ -1,12 +1,11 @@
-FROM debian:jessie
+FROM alpine:edge
 
-RUN apt-get update &&\
-    apt-get install -y sudo time git-core subversion build-essential g++ bash make libssl-dev patch && \
-    apt-get install -y libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python xz-utils && \
-    apt-get clean && \
-    useradd -m user && \
-    echo 'user ALL=NOPASSWD: ALL' > /etc/sudoers.d/user && \
-    mkdir /home/user/build
+RUN apk add git build-base bash ncurses-dev perl tar findutils patch coreutils gawk grep unzip bzip2 wget python2-dev linux-headers curl diffutils bsd-compat-headers less zlib-dev && \
+    addgroup -S user && \
+    adduser -D -G user user
 
 USER user
 WORKDIR /home/user/build
+
+# set dummy git config
+RUN git config --global user.name "user" && git config --global user.email "user@example.com"
