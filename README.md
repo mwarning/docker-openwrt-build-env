@@ -24,7 +24,7 @@ Now the docker image is available. These steps only need to be done once.
 Create a build folder and link it into a new docker container:
 ```
 mkdir ~/mybuild
-docker run -v ~/mybuild:/home/user/build -it openwrt_builder /bin/bash
+docker run -v ~/mybuild:/home/user -it openwrt_builder /bin/bash
 ```
 
 In the container console, enter:
