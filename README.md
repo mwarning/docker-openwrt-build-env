@@ -5,6 +5,8 @@ Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is some
 The docker image is based on Ubuntu Linux.
 Works with LEDE-17.01, OpenWrt-18.06 and newer.
 
+A smaller container based on Alpine Linux is available in the alpine branch. But it does not build the old LEDE images.
+
 ## Prerequisites
 
 * Docker installed
