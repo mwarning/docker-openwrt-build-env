@@ -3,7 +3,7 @@
 Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is sometimes necessary when building OpenWrt on the host system fails, e.g. when some dependency is too new.
 
 The image is based on Apline Linux, which is a basis for small docker images.
-It lets you build OpenWrt-18.06 and newer, but LEDE-17.01 does not work.
+It lets you build image based on OpenWrt-18.06 and newer, but LEDE-17.01 does not work.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Now the docker image is available. These steps only need to be done once.
 Create a build folder and link it into a new docker container:
 ```
 mkdir ~/mybuild
-docker run -v ~/mybuild:/home/user/build -it openwrt_builder /bin/bash
+docker run -v ~/mybuild:/home/user -it openwrt_builder_alpine /bin/bash
 ```
 
 In the container console, enter:

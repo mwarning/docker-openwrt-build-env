@@ -5,7 +5,7 @@ RUN apk add git build-base bash ncurses-dev perl tar findutils patch coreutils g
     adduser -D -G user user
 
 USER user
-WORKDIR /home/user/build
+WORKDIR /home/user
 
 # set dummy git config
 RUN git config --global user.name "user" && git config --global user.email "user@example.com"
