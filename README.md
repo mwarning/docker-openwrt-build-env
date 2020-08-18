@@ -45,6 +45,22 @@ make -j4
 
 After the build, the images will be inside `~/mybuild/openwrt/bin/target/`.
 
+## MacOSX
+
+OpenWrt requires a case-sensitive filesystem while MacOSX uses a case-insensitive filesystem by default.
+
+Create a disk image:
+```
+hdiutil create -size 20g -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.dmg hdiutil attach OpenWrt.dmg
+```
+
+Then run:
+```
+docker run -v /volumes/openwrt:/home/user -it openwrt_builder /bin/bash
+```
+
+([Source](https://openwrt.org/docs/guide-developer/easy.build.macosx))
+
 ## Other Projects
 
 Other, but very similar projects:
