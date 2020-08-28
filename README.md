@@ -25,7 +25,7 @@ docker build -t openwrt_builder .
 
 Now the docker image is available. These steps only need to be done once.
 
-## Usage
+## Usage GNU/Linux
 
 Create a build folder and link it into a new docker container:
 ```
@@ -45,7 +45,7 @@ make -j4
 
 After the build, the images will be inside `~/mybuild/openwrt/bin/target/`.
 
-## MacOSX
+## Usage MacOSX
 
 OpenWrt requires a case-sensitive filesystem while MacOSX uses a case-insensitive filesystem by default.
 
@@ -60,6 +60,10 @@ docker run -v /volumes/openwrt:/home/user -it openwrt_builder /bin/bash
 ```
 
 ([Source](https://openwrt.org/docs/guide-developer/easy.build.macosx))
+
+## Usage Windows
+
+TODO
 
 ## Other Projects
 
