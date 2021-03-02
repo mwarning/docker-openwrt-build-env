@@ -4,9 +4,9 @@ Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is some
 
 Build tested:
 
-- OpenWrt master (0e522d5f4a)
-- OpenWrt-19.07.2
-- OpenWrt-18.06.8
+- OpenWrt-21.02 (e4d061cd)
+- OpenWrt-19.07.7
+- OpenWrt-18.06.9
 - LEDE-17.01.7
 
 A smaller container based on Alpine Linux is available in the alpine branch. But it does not build the old LEDE images.
