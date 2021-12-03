@@ -50,7 +50,8 @@ OpenWrt requires a case-sensitive filesystem while MacOSX uses a case-insensitiv
 
 Create a disk image:
 ```
-hdiutil create -size 20g -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.dmg hdiutil attach OpenWrt.dmg
+hdiutil create -size 20g -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.dmg 
+hdiutil attach OpenWrt.dmg
 ```
 
 Then run:
