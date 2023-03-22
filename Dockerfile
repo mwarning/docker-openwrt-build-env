@@ -11,8 +11,8 @@ RUN apt-get update &&\
     useradd -m user && \
     echo 'user ALL=NOPASSWD: ALL' > /etc/sudoers.d/user
 
+# set system wide dummy git config
+RUN git config --system user.name "user" && git config --system user.email "user@example.com"
+
 USER user
 WORKDIR /home/user
-
-# set dummy git config
-RUN git config --global user.name "user" && git config --global user.email "user@example.com"
