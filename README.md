@@ -1,4 +1,4 @@
-# Docker OpenWrt Builder
+# Docker OpenWrt Build Environment
 
 Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is sometimes necessary when building OpenWrt on the host system fails, e.g. when some dependency is too new. The docker image is based on Debian 10 (Buster).
 
