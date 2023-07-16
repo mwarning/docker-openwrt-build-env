@@ -60,7 +60,7 @@ hdiutil attach openwrt-dev-env.dmg
 
 Then run:
 ```zsh
-docker run -v /Volumes/openwrt-dev-env:/home/user -it openwrt_builder /bin/bash
+docker run --privileged -v /Volumes/openwrt-dev-env:/home/user -it openwrt_builder /bin/bash
 ```
 
 Inside the container shell create a image file that will be formatted in ext4 then mounted (thanks to [HowellBP](https://github.com/HowellBP/ext4-on-macos-using-docker) for the inspiration):
