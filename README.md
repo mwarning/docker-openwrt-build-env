@@ -99,6 +99,6 @@ TODO
 ## Other Projects
 
 Other, but very similar projects:
+* [openwrt-imagebuilder-action](https://github.com/izer-xyz/openwrt-imagebuilder-action)
 * [docker-openwrt-buildroot](https://github.com/noonien/docker-openwrt-buildroot)
 * [openwrt-docker-toolchain](https://github.com/mchsk/openwrt-docker-toolchain)
-
