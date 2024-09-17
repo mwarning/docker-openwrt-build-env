@@ -4,7 +4,7 @@ Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is some
 
 Build tested:
 
-- Openwrt-23.05.0-rc1
+- Openwrt-23.05.4
 - OpenWrt-22.03.5
 - OpenWrt-21.02.2
 - OpenWrt-19.07.8
