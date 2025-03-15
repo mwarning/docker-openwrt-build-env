@@ -4,6 +4,7 @@ Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is some
 
 Build tested:
 
+- Openwrt-24.10.0
 - Openwrt-23.05.4
 - OpenWrt-22.03.5
 - OpenWrt-21.02.2
@@ -99,6 +100,8 @@ TODO
 ## Other Projects
 
 Other, but very similar projects:
+
+* [openwrt-docker](https://github.com/openwrt/docker) Official Docker containers to build OpenWrt!
 * [openwrt-imagebuilder-action](https://github.com/izer-xyz/openwrt-imagebuilder-action)
 * [docker-openwrt-buildroot](https://github.com/noonien/docker-openwrt-buildroot)
 * [openwrt-docker-toolchain](https://github.com/mchsk/openwrt-docker-toolchain)
